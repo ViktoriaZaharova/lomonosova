@@ -25,6 +25,19 @@
 
 <body>
 
+<div class="mobile-menu">
+    <div class="mobile-menu__close"></div>
+    <ul class="menu">
+        <li><a href="#sale" class="go_to">Акции</a></li>
+        <li><a href="#portfolio" class="go_to">Работы</a></li>
+        <li><a href="#atmosphere" class="go_to">Атмосфера</a></li>
+        <li><a href="#masters" class="go_to">Мастера</a></li>
+        <li><a href="#price" class="go_to">Прайс-лист</a></li>
+        <li><a href="#instagramm" class="go_to">Instagram</a></li>
+        <li><a href="#contacts" class="go_to">Контакты</a></li>
+    </ul>
+</div>
+
 <header>
     <div class="container">
         <a href="tel:+78126471414" class="phone">+ 7 812 647 14 14</a>
@@ -66,7 +79,67 @@
     </div>
 </main>
 
-<section class="atmosphere p-r">
+<section class="sale p-r price" id="sale">
+    <div class="section-content">
+        <div class="title-bg">Акции</div>
+
+        <h2>Акции</h2>
+
+        <div class="title-line">
+            01
+        </div>
+
+        <div class="description-section">
+            <p>Вы можете быть уверены, в том, что мы принимаем<br>
+                все меры для обеспечения Вашего комфорта и удобства</p>
+        </div>
+
+        <div class="sale-wrapper">
+            <div class="sale-box">
+                <img src="img/sale1.jpg" alt="">
+            </div>
+            <div class="sale-box">
+                <img src="img/sale2.jpg" alt="">
+            </div>
+            <div class="sale-box">
+                <img src="img/sale3.jpg" alt="">
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-border btn-border-black">Забронировать визит</a>
+    </div>
+</section>
+
+<section class="portfolio masters p-r bg-grey" id="portfolio">
+    <div class="section-content">
+        <div class="title-bg">Работы</div>
+
+        <h2>Работы</h2>
+
+        <div class="title-line">
+            02
+        </div>
+
+        <div class="portfolio-slider">
+                <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+
+                <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+
+            <a href="img/gallery1.jpg" data-fancybox="images" class="gallery-item"><img src="img/gallery1.jpg" alt=""></a>
+        </div>
+
+    </div>
+</section>
+
+<section class="atmosphere p-r" id="atmosphere">
 
     <div class="section-content">
         <div class="title-bg">Атмосфера</div>
@@ -74,7 +147,7 @@
         <h2>Атмосфера</h2>
 
         <div class="title-line">
-            01
+            03
         </div>
 
         <div class="description-section">
@@ -90,13 +163,13 @@
 
 </section>
 
-<section class="masters bg-grey p-r">
+<section class="masters bg-grey p-r" id="masters">
     <div class="section-content">
         <div class="title-bg">Мастера</div>
         <h2>Мастера</h2>
 
         <div class="title-line">
-            02
+            04
         </div>
 
         <div class="description-section">
@@ -255,13 +328,13 @@
     </div>
 </section>
 
-<section class="price p-r">
+<section class="price p-r" id="price">
     <div class="section-content">
         <div class="title-bg">Прайс-лист</div>
         <h2>Прайс-лист</h2>
 
         <div class="title-line">
-            03
+            05
         </div>
 
         <div class="description-section">
@@ -277,7 +350,7 @@
                 <li>Лазерная косметология
                     и эпиляция
                 </li>
-                <li class="active">Процедуры для
+                <li>Процедуры для
                     тела
                 </li>
                 <li>Мужское
@@ -499,7 +572,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tabs__content active">
+            <div class="tabs__content">
                 <div class="tabs__content-wrapper">
                     <div class="tabs__content-box">
                         <h3>Массаж</h3>
@@ -1109,14 +1182,17 @@
     </div>
 </section>
 
-<section class="instagramm bg-grey p-r">
+<section class="instagramm bg-grey p-r" id="instagramm">
     <div class="section-content">
         <div class="title-bg">Instagram</div>
         <h2>Instagram</h2>
 
         <div class="title-line">
-            04
+            06
         </div>
+
+        <div class="description-section">Высочайшее качество и многолетний опыт
+            создания шедевров</div>
 
         <div class="instagramm-content">
 
@@ -1139,13 +1215,13 @@
     </div>
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
     <div class="section-content">
         <div class="title-bg">Контакты</div>
         <h2>Контакты</h2>
 
         <div class="title-line">
-            05
+            07
         </div>
         
         <div class="description-section">Высочайшее качество и многолетний опыт

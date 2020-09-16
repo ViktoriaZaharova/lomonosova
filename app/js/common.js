@@ -15,6 +15,12 @@ $('.slider-masters').slick({
     ]
 });
 
+$('.portfolio-slider').slick({
+    slidesToShow: 3,
+    variableWidth: true,
+    autoplay: true
+});
+
 $(".slider-masters").on('afterChange', function (event, slick, currentSlide) {
     $(".cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
 });
@@ -29,6 +35,41 @@ $("body").on("click", ".btn-scroll-top", function () {
     $("html, body").animate({
         scrollTop: 0
     }, "slow")
+});
+
+$('.menu-fixed-btn').click(function () {
+    $('.mobile-menu').css('left', '0');
+
+    setTimeout(function () {
+        $('.menu').css('opacity', '1');
+    }, 1500)
+});
+
+$('.mobile-menu__close').click(function () {
+    setTimeout(function () {
+        $('.mobile-menu').css('left', '-100%');
+    }, 1500);
+
+
+    $('.menu').css('opacity', '0');
+});
+
+$('.gallery-item').fancybox();
+
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+
+        setTimeout(function () {
+            $('.mobile-menu').css('left', '-100%');
+        }, 500);
+
+        $('.menu').css('opacity', '0');
+    }
+    return false;
 });
 
 // Инициализация карты
