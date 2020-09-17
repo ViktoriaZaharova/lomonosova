@@ -186,16 +186,32 @@ header
   height: 100%
   overflow-y: auto
   z-index: 5
-  padding: 50px
+  padding: 50px 40px
   background: #202020
   left: -100%
   transition: 1s ease
+
+
+.mobile-links
+  display: flex
+  align-items: center
+  font-size: 16px
+  color: #fff
+  margin: 0 0 20px
+  opacity: 0
+  transition: 1.3s ease
+  .icon
+    width: 20px
+    min-width: 20px
+    height: 20px
+    margin: 0 10px 0 0
   
 .menu
   flex-direction: column
   align-items: flex-start
   transition: 1.5s ease
   opacity: 0
+  margin: 0 0 50px
   li
     margin: 0 0 30px
     display: block
@@ -316,7 +332,7 @@ header
     transform: translate(-50%,-50%) rotate(45deg)
     width: 120px
     height: 120px
-    background-color: #202020
+    background-color: #cb975b
   span
     position: relative
     z-index: 1
@@ -389,7 +405,7 @@ main
 
 .atmosphere-img3
   position: absolute
-  right: 0
+  right: 20px
   z-index: 1
   bottom: 553px
   max-width: 525px
@@ -406,6 +422,10 @@ main
 
 
 //sale
+.sale
+  .description-section
+    max-width: none
+
 .sale-wrapper
   display: flex
   align-items: stretch
@@ -418,6 +438,9 @@ main
   color: #202020
   max-width: 280px
   margin: 0 auto
+  &:hover
+    background: #202020
+    color: #fff
 
 .sale-box
   margin: 0 0 30px
@@ -426,6 +449,7 @@ main
 //.portfolio
 .portfolio-slider
   width: 100%
+  margin: 40px 0 0
 
 .gallery-item
   margin: 0 30px 0 0
@@ -457,7 +481,7 @@ main
   background: #202020
   color: #fff
   .section-content
-    padding: 217px 20px 70px
+    padding: 160px 20px 70px
 
   .description-section
     max-width: 1140px
@@ -642,7 +666,7 @@ main
 //price
 .price
   .section-content
-    padding: 204px 20px 70px
+    padding: 150px 20px 70px
 
 .tabs__content
   display: none /* по умолчанию прячем все блоки */
@@ -654,7 +678,6 @@ main
 
 .tabs
   width: 100%
-  max-width: 1530px
   margin: 43px 0 0
 
 .tabs__caption
